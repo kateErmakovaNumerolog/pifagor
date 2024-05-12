@@ -1,13 +1,17 @@
-import { SubmitButton } from './SubmitButton/SubmitButton';
-import { Input } from './Input/Input';
+import { PickerContainer } from './PickerContainer/PickerContainer';
+import { BrowserRouter } from 'react-router-dom'; // Импортируем BrowserRouter
 import { Tabel } from './Table/Table';
+import { useState } from 'react';
 
 export const App = () => {
+  const [value, setValue] = useState('');
+  const onSubmit = birthDate => {
+    setValue(birthDate);
+  };
   return (
-    <div>
-      <Input />
-      <SubmitButton />
-      <Tabel />
+    <div className="p-10">
+      <PickerContainer onSubmitBithDate={onSubmit} />
+      <Tabel value={value} />
     </div>
   );
 };
