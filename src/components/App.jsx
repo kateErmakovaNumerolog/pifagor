@@ -1,5 +1,4 @@
 import { PickerContainer } from './PickerContainer/PickerContainer';
-import { BrowserRouter } from 'react-router-dom'; // Импортируем BrowserRouter
 import { Tabel } from './Table/Table';
 import { useState } from 'react';
 
