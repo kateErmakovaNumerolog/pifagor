@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pifagor/static/css/main.832c7364.css",
+    "main.js": "/pifagor/static/js/main.d6883648.js",
+    "static/media/katia.png": "/pifagor/static/media/katia.967d09647a05a5647a13.png",
+    "static/media/insta.png": "/pifagor/static/media/insta.032e970598745f5b09a1.png",
+    "index.html": "/pifagor/index.html",
+    "main.832c7364.css.map": "/pifagor/static/css/main.832c7364.css.map",
+    "main.d6883648.js.map": "/pifagor/static/js/main.d6883648.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.832c7364.css",
+    "static/js/main.d6883648.js"
+  ]
+}
