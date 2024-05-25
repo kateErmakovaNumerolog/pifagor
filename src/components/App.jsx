@@ -8,7 +8,7 @@ export const App = () => {
     setValue(birthDate);
   };
   return (
-    <div className="p-10">
+    <div className="sm:p-5 md:p-5 lg:p-12 xl:p-24">
       <PickerContainer onSubmitBithDate={onSubmit} />
       <Tabel value={value} />
     </div>
