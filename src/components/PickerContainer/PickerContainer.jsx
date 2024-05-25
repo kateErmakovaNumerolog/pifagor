@@ -23,7 +23,7 @@ export const PickerContainer = ({ onSubmitBithDate }) => {
     onSubmitBithDate(birthDate);
   };
   return (
-    <div className="mb-10 mt-20 flex items-center flex-col">
+    <div className="mb-10 mt-5 flex items-center flex-col">
       <span className="text-center mb-5">Введіть дату народження</span>
       <div className="flex justify-center ">
         <Input onChange={onChange} value={birthDate} />
