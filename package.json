@@ -1,8 +1,8 @@
 {
-  "name": "kate-numerology",
+  "name": "pifagor",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vidiborets.github.io/kate-numerology/",
+  "homepage": "https://kateErmakovaNumerolog.github.io/pifagor/",
   "dependencies": {
     "@mui/base": "^5.0.0-beta.40",
     "@testing-library/jest-dom": "^5.16.3",
