@@ -1,20 +1,24 @@
 import { PhotoContainer } from './PhotoContainer/PhotoContainer';
 import { PickerContainer } from './PickerContainer/PickerContainer';
+import { observer } from 'mobx-react-lite';
 import { Social } from './Social/Social';
 import { Tabel } from './Table/Table';
-import { useState } from 'react';
+import { model } from 'model/Model';
+import ValueContext from '../model/ValueContext';
 
-export const App = () => {
-  const [value, setValue] = useState('');
+export const App = observer(() => {
   const onSubmit = birthDate => {
-    setValue(birthDate);
+    model.replaceDate(birthDate);
   };
+
   return (
-    <div className=" min-[320px]:p-1 sm:p-5 md:p-5 lg:p-12 xl:p-2">
-      <PhotoContainer />
-      <PickerContainer onSubmitBithDate={onSubmit} />
-      <Tabel value={value} />
-      <Social />
-    </div>
+    <ValueContext.Provider value={model.value}>
+      <div className=" min-[320px]:p-1 sm:p-5 md:p-5 lg:p-12 xl:p-2">
+        <PhotoContainer />
+        <PickerContainer onSubmitBithDate={onSubmit} />
+        <Tabel />
+        <Social />
+      </div>
+    </ValueContext.Provider>
   );
-};
+});

@@ -1,20 +1,9 @@
-import { useEffect, useState } from 'react';
-import { getBirthDate } from '../../service/BithDateService';
+import React, { useContext } from 'react';
+import ValueContext from '../../model/ValueContext';
 
-export const Tabel = value => {
-  const [object, setObject] = useState({});
-  useEffect(() => {
-    const birthDate = value;
-    if (birthDate?.value) {
-      getBirthDate(birthDate)
-        .then(res => {
-          setObject(res); // Установите объект состояния с полученными данными
-        })
-        .catch(error => {
-          console.error('Ошибка при получении данных:', error);
-        });
-    }
-  }, [value]);
+export const Tabel = () => {
+  const value = useContext(ValueContext);
+
   const {
     aimNumber,
     characterNumber,
@@ -31,7 +20,7 @@ export const Tabel = value => {
     memoryNumber,
     passionNumber,
     workNumber,
-  } = object;
+  } = value;
   return (
     <div className="relative overflow-x-auto shadow-md rounded-lg">
       <table className="w-full text-sm text-left rtl:text-right text-gray-900">

@@ -7,7 +7,7 @@ export const PickerContainer = ({ onSubmitBithDate }) => {
   const [birthDate, setBirthDate] = useState('');
 
   const onChange = e => {
-    let formattedDate = e.target.value.replace(/\D/g, ''); // Удалить все нечисловые символы
+    let formattedDate = e.target.value.replace(/\D/g, '');
     if (formattedDate.length > 2) {
       formattedDate = formattedDate.slice(0, 2) + '.' + formattedDate.slice(2);
     }
