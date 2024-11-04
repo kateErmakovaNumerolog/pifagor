@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/pifagor/static/css/main.65fbfa2e.css",
-    "main.js": "/pifagor/static/js/main.54db295e.js",
+    "main.js": "/pifagor/static/js/main.deebcfb3.js",
     "static/media/katia.png": "/pifagor/static/media/katia.967d09647a05a5647a13.png",
     "static/media/insta.png": "/pifagor/static/media/insta.032e970598745f5b09a1.png",
     "index.html": "/pifagor/index.html",
     "main.65fbfa2e.css.map": "/pifagor/static/css/main.65fbfa2e.css.map",
-    "main.54db295e.js.map": "/pifagor/static/js/main.54db295e.js.map"
+    "main.deebcfb3.js.map": "/pifagor/static/js/main.deebcfb3.js.map"
   },
   "entrypoints": [
     "static/css/main.65fbfa2e.css",
-    "static/js/main.54db295e.js"
+    "static/js/main.deebcfb3.js"
   ]
 }
