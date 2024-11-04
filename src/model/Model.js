@@ -18,8 +18,8 @@ class Model {
   }
 
   correctBirthDay() {
-    const clearedArray = this.clearArray(this.dateArray);
-    this.calculateSecondNumbers(clearedArray);
+    this.dateArray = this.clearArray(this.dateArray);
+    this.calculateSecondNumbers(this.dateArray);
   }
 
   clearArray(dateArray) {
@@ -93,20 +93,20 @@ class Model {
 
   showMatrix(matrix, destiny) {
     this.value = {
-      aimNumber: matrix[12] || '',
+      aimNumber: matrix[12],
       characterNumber: matrix[0] || '',
       curiosityNumber: matrix[2] || '',
       dutyNumber: matrix[7] || '',
       energyNumber: matrix[1] || 0,
       everyDayLifeNumber: matrix[10] || '',
-      familyNumber: matrix[11] || '',
+      familyNumber: matrix[11],
       fateNumber: destiny || '',
-      habitsNumber: matrix[13] || '',
+      habitsNumber: matrix[13],
       healthNumber: matrix[3] || '',
       logicNumber: matrix[4] || '',
       luckNumber: matrix[6] || '',
       memoryNumber: matrix[8] || '',
-      passionNumber: matrix[9] || '',
+      passionNumber: matrix[9],
       workNumber: matrix[5] || '',
     };
   }
